@@ -1,12 +1,12 @@
         /*CSS*/
-          body {
+        body {
             --def: #ff0000;   
             --inv: #000000;
             background-color: rgb(73, 73, 73);
-          }
-          html {font-family: 'Playfair Display', serif;}
-          div {margin-bottom: 3rem;}
-          div:last-child {margin-bottom: 0;}
+        }
+        html {font-family: 'Playfair Display', serif;}
+        div {margin-bottom: 3rem;}
+        div:last-child {margin-bottom: 0;}
 
         h1{
             text-align: center;
