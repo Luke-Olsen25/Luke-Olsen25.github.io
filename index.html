@@ -3,45 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity01</title>
-    <style>
-        /*CSS goes here*/
-        body{
-            background-color: rgb(39, 39, 39);
-            color:rgb(216, 216, 216);
-        }
-        h1{
-            text-align: center;
-            border-bottom: solid;
-            border-radius: 50%;
-        }
-        h3{
-            text-align:center;
-            
-        }
-        p{
-            text-align:center;
-            padding-left: 15%;
-            padding-right: 15%;
-        }
-        img{
-            display:block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="./homepage.css" >
+    <title>Luke Olsen</title>
 </head>
+
 <body>
     <h1> Cyclone -🐦- Power </h1>
-    <h3>About me!</h3>
-    <p>
-        I am a Sophomore in the College of Engineering at Iowa State University studying Software Engineering. 
-        I am apart of a unique degree program that allows me to explore computer science, computer engineering, and software engineering core topics, giving me a wide range of skills and talents. 
-        With a high interest in embedded and electrical systems, I am involved with the PrISUm Solar Car team at Iowa State University to learn and apply embedded systems using industry standards.
-        These resources have allowed me to INNOVATE at Iowa State!
-    </p>
-   
+    <h3 class = "header-left">About me!</h3>
+    <h3 class = "header-right">Experience</h3>
     
-    <img src="./Olsen005439-R1-029-13.jpg" style="width: 500px;" alt = "Here is a picture">
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>
+                I am a Sophomore in the College of Engineering at Iowa State University studying Software Engineering. 
+                I am apart of a unique degree program that allows me to explore computer science, computer engineering, and software engineering core topics, giving me a wide range of skills and talents. 
+                With a high interest in embedded and electrical systems, I am involved with the PrISUm Solar Car team at Iowa State University to learn and apply those topics using industry standards.
+                These resources have allowed me to INNOVATE at Iowa State!
+            </p>
+        </div>
+        <div class="grid-item">
+            <ul>
+                <button class = "button-one">Internships</button>
+                <button class = "button-two">SAE Solar Car</button>
+                <button class = "button-three">Iowa State</button>
+            </ul>
+        </div>
+        <div class="grid-item">
+            <img src="./Olsen005439-R1-029-13.jpg" alt = "Here is a picture" style = "width: 100%;">
+        </div>
+        <div class="grid-item">
+            Under maintenance...
+        </div>
+    </div>
+    
+    
 </body>
 </html>

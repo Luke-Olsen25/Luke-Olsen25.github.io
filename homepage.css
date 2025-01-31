@@ -1,0 +1,52 @@
+        /*CSS*/
+        body{
+            background-color: rgb(39, 39, 39);
+            color:rgb(216, 216, 216);
+            text-align: center;
+        }
+        h1{
+            border-bottom: solid;
+            border-radius: 100%;
+            border-color: red;
+            padding-bottom: 1%;
+        }
+        .header-left{
+            display: inline-block;
+            text-align: left;
+        }
+        .header-right{
+            display: inline-block;
+            text-align: right;
+            padding-left: 47%;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+            gap: 10px; /* Spacing between items */
+            margin: auto;
+        }
+        .grid-item {
+            text-align: center;
+            text-align: left;
+            border: 1px solid #000;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button-one{
+            display: block;
+
+            
+        }
+        .button-two{
+            display: block;
+            margin-top: 20%;
+            margin-bottom: 20%;
+
+
+        }
+        .button-three{
+            display: block;
+
+
+        }
