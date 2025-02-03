@@ -2,7 +2,7 @@
         body {
             --def: #ff0000;   
             --inv: #000000;
-            background-color: rgb(73, 73, 73);
+            background-color: rgb(196, 196, 196);
         }
         html {font-family: 'Playfair Display', serif;}
         div {margin-bottom: 3rem;}
