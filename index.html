@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style/homepage.css" >
+    <link rel="stylesheet" href="./page.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Luke Olsen</title>
+
 </head>
+
 
 <body>
     <h1> Cyclone -🌪️- Power </h1>    
@@ -15,14 +18,49 @@
         With a high interest in embedded and electrical systems, I am involved with the PrISUm Solar Car team at Iowa State University to learn and apply those topics using industry standards.
         These resources have allowed me to INNOVATE at Iowa State!
     </p>
-    <div class = "btn from-left" style = "text-align: center; padding-left: 25%; padding-right: 25%;" onclick="window.location.href = 'internships.html';">Internships</div>
-    <div class = "btn from-left" style = "text-align: center; padding-left: 25%; padding-right: 25%;" onclick="window.location.href = 'saeSolarCar.html';">SAE Solar Car</div>
-    <div class = "btn from-left" style = "text-align: center; padding-left: 25%; padding-right: 25%;" onclick="window.location.href = 'iowaState.html';">Iowa State</div>
+    <div>
+        <div class = "btn from-left" style = "text-align: center; padding-left: 25%; padding-right: 25%;" onclick="window.location.href = 'internships.html';">Internships</div>
+        <div class = "btn from-left" style = "text-align: center; padding-left: 25%; padding-right: 25%;" onclick="window.location.href = 'saeSolarCar.html';">SAE Solar Car</div>
+        <div class = "btn from-left" style = "text-align: center; padding-left: 25%; padding-right: 25%;" onclick="window.location.href = 'iowaState.html';">Iowa State</div>
+    </div>
+    <div class="info">
+        <div>        
+            <img src="./images/Olsen005439-R1-029-13.jpg" alt = "Picture taken by me! At the ISU Student Innovation Center." style = "width: 50%;">  
+        </div>
+        <div>
+            <button class="base-btn" id="linkedin-btn"><i class="fa fa-linkedin"></i></button>
+            <script>
+                document.getElementById("linkedin-btn").addEventListener("click", function() {
+                    window.open("https://www.linkedin.com/in/luke-olsen1325", "_blank");
+                });
+            </script>
 
-    <img src="./images/Olsen005439-R1-029-13.jpg" alt = "Picture taken by me! At the ISU Student Innovation Center" style = "width: 50%; display: block; margin:auto;">    
-    <footer>
-        <p>Contact: ltolsen@iastate.edu</p>
-        <p>&copy; 2025 Luke Olsen</p>
-    </footer>
+            <button class="base-btn" id="spotify-btn"><i class="fa fa-spotify"></i></button>
+            <script>
+                document.getElementById("spotify-btn").addEventListener("click", function() {
+                    window.open("https://open.spotify.com/user/luke_nws?si=61a5da5c1ef84d90", "_blank");
+                });
+            </script>
+
+            <button class="base-btn" id="copy-email"><i class="fa fa-envelope"></i></button>
+            <p id="copy-status"></p>
+            <script>
+                document.getElementById("copy-email").addEventListener("click", function () {
+                    const email = "ltolsen@iastate.edu";
+                    navigator.clipboard.writeText(email).then(() => {
+                        document.getElementById("copy-status").textContent = "Email copied!";
+                        setTimeout(() => {
+                            document.getElementById("copy-status").textContent = "";
+                        }, 2000);
+                    })
+                });
+            </script>
+
+        </div>
+        <footer>
+            <p>&copy; 2025 Luke Olsen</p>
+        </footer>
+    </div>
+
 </body>
 </html>
